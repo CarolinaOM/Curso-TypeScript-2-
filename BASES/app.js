@@ -1,5 +1,6 @@
 "use strict";
 (() => {
+    //ACTIVIDAD
     // Tipos
     /*const batman = 'Bruce';
     const superman = 'Clark';
@@ -11,44 +12,31 @@
     // Arreglos
     /*const aliados = ['Mujer Maravilla','Acuaman','San', 'Flash'];*/
     //Enumeraciones
-    // ? enum {acuaman = 0}
-    const fuerzaFlash = 5;
+    /*const fuerzaFlash = 5;
     const fuerzaSuperman = 100;
     const fuerzaBatman = 1;
-    const fuerzaAcuaman = 0;
+    const fuerzaAcuaman = 0;*/
     // Retorno de funciones
-    function activar_batiseñal() {
-        return 'activada';
+    /*function activar_batiseñal(){
+      return 'activada';
     }
-    function pedir_ayuda() {
-        console.log('Auxilio!!!');
-    }
+  
+    function pedir_ayuda(){
+      console.log('Auxilio!!!');
+    }*/
     // Aserciones de Tipo
     /*const poder: any = '100';
     const largoDelPoder:number = poder.length;
     console.log( largoDelPoder );*/
+    //RESULTADOS
     //tipos 1
     const batman = 'Bruce';
     const superman = 'Clark';
     const existe = false;
     //tuplas 2
-    /*parejaHeroes[0] = 'Bruce';
-    parejaHeroes[1] = 'Clark'
-
-    console.log(parejaHeroes);
-    
-
-    villano[0] = 'Lex Lutor';
-    villano[1] = 2.5;
-    villano[2] = false
-
-    console.log(villano);*/
-    //otra manera
     const parejaHeroes = [batman, superman];
     const villano = ['Lex Lutor', 5, true];
     //arreglos 3
-    /*aliados.forEach(a => console.log(a.toLocaleLowerCase()));*/
-    //otra manera
     const aliados = ['Mujer Maravilla', 'Acuaman', 'San', 'Flash'];
     //Enumeraciones 4
     let supereroes;
@@ -92,5 +80,5 @@
     // Aserciones de  6
     const poder = '100';
     const largoDelPoder = poder.length;
-    console.log(largoDelPoder); // Imprime 3
+    console.log(largoDelPoder);
 })();
