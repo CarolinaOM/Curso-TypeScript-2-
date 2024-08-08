@@ -24,6 +24,12 @@
         
     }
 
-    printAvenger(avengers);
+    //printAvenger(avengers);
+
+    const avengersArr:[string, boolean, number] = ['Cap. America', true, 150.15];
+
+    const [capitan, iroman, seriaUnNumero] = avengersArr;
+    //console.log({iroman, capitan});
+    
     
 })()

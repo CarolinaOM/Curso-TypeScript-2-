@@ -22,7 +22,8 @@ var __rest = (this && this.__rest) || function (s, e) {
         var { iroman } = _a, resto = __rest(_a, ["iroman"]);
         console.log(iroman, resto);
     };
-    printAvenger(avengers);
+    const avengersArr = ['Cap. America', true, 150.15];
+    const [capitan, iroman, seriaUnNumero] = avengersArr;
 })();
 (() => {
     const nombre = 'Carolina';
