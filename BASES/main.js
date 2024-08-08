@@ -111,6 +111,12 @@ noHaceNadaTampoco = noHaceNada;
     console.log(largoDelPoder);
 })();
 (() => {
+    const nombre = 'Carolina';
+    const getName = () => {
+        console.log('Viejo getName');
+    };
+})();
+(() => {
     const fullName = (firstName, lastName, upper = false) => {
         if (upper) {
             return `${firstName} ${lastName || '----'}`.toUpperCase();
