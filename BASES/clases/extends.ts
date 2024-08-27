@@ -14,6 +14,7 @@
     }
 
     class Xmen extends Avenger {
+
         constructor(
             name: string,
             realName: string,
@@ -24,16 +25,32 @@
             
         }
 
+        get fullName() {
+            return `${this.name} - ${this.realName}`;
+        }
+
+        set fullName( name: string){
+            if(name.length < 3){
+                throw new Error('El nombre debe ser mayor de 3 letras')
+            }
+            this.name = name;
+        }
+
         getFullnameDesdeXman(){
             console.log(super.getFullName());
             
         }
+
     }
 
     const wolverine = new Xmen('Wolverine', 'Logan', true)
 
-    console.log(wolverine);
-    wolverine.getFullnameDesdeXman();
+    console.log(wolverine.fullName);
+
+    wolverine.fullName = 'Caro'
+    console.log(wolverine.fullName);
+    
+    //wolverine.getFullnameDesdeXman();
     
     
     
