@@ -1,7 +1,13 @@
-"use strict";
 (() => {
-    ;
-    let flash = {
+
+    interface Hero {
+        name: string;
+        age?: number;
+        powers: number[];
+        getName: () => string;
+    };
+
+    let flash: Hero = {
         name: 'Barry Allen',
         age: 24,
         powers: [1, 2],
@@ -9,13 +15,14 @@
             return this.name;
         }
     };
-    let superman = {
+
+    let superman: Hero = {
         name: 'Clark Kent',
         age: 60,
         powers: [1],
         getName() {
             return this.name;
         }
-    };
-})();
-//# sourceMappingURL=main.js.map
+    }
+
+})()
