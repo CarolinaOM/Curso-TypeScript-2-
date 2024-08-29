@@ -21,11 +21,14 @@
 (() => {
     const client = {
         name: 'Carolina',
-        age: '27',
+        age: 27,
         address: {
             id: 125,
             zip: 'KY2 SUD',
             city: 'Ottawa'
+        },
+        getFullAddress(id) {
+            return this.address.city;
         }
     };
     const client2 = {
@@ -35,6 +38,9 @@
             city: 'Toronto',
             id: 120,
             zip: 'U2A'
+        },
+        getFullAddress(id) {
+            return this.address.city;
         }
     };
 })();
