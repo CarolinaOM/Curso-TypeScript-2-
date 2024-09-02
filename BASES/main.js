@@ -19,6 +19,18 @@
     };
 })();
 (() => {
+    class Mutant {
+        constructor(age, name, realName) {
+            this.age = age;
+            this.name = name;
+            this.realName = realName;
+        }
+        mutanPower(id) {
+            return this.name + ' ' + this.realName;
+        }
+    }
+})();
+(() => {
     const client = {
         name: 'Carolina',
         age: 27,
