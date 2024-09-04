@@ -12,7 +12,7 @@
 
 
 
-import { printObject, genericFuntion } from "./generics/generics";
+import { printObject, genericFuntion, genericFunctionArrow } from './generics/generics';
 
 //printObject(123);
 //printObject(new Date());
@@ -20,7 +20,9 @@ import { printObject, genericFuntion } from "./generics/generics";
 //printObject([1,2,3,4,5,6,7,8,9]);
 //printObject('Hola Mundo');
 
-console.log(genericFuntion(3.141618).toFixed(2));
-console.log(genericFuntion(new Date()).toFixed(2));
-//console.log(genericFuntion('Hola Mundo').toFixed(2));
+const name: string = 'Caro';
+
+console.log(genericFunctionArrow(3.141618).toFixed(2));
+console.log(genericFunctionArrow(new Date().getDate));
+console.log(genericFunctionArrow(name).toUpperCase());
 
