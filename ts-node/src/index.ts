@@ -12,7 +12,9 @@
 
 
 
+import { Hero } from './interfaces/hero';
 import { printObject, genericFuntion, genericFunctionArrow } from './generics/generics';
+import { Villain } from './interfaces/villain';
 
 //printObject(123);
 //printObject(new Date());
@@ -20,9 +22,19 @@ import { printObject, genericFuntion, genericFunctionArrow } from './generics/ge
 //printObject([1,2,3,4,5,6,7,8,9]);
 //printObject('Hola Mundo');
 
-const name: string = 'Caro';
+//const name: string = 'Caro';
 
-console.log(genericFunctionArrow(3.141618).toFixed(2));
-console.log(genericFunctionArrow(new Date().getDate));
-console.log(genericFunctionArrow(name).toUpperCase());
+//console.log(genericFunctionArrow(3.141618).toFixed(2));
+//console.log(genericFunctionArrow(new Date().getDate));
+//console.log(genericFunctionArrow(name).toUpperCase());
+
+
+
+const deadpool = {
+    name: 'Deapool',
+    realName: 'Wade Winston Wilson',
+    dangerLevel: 130
+}
+
+console.log(genericFunctionArrow<Villain>(deadpool).dangerLevel);
 
