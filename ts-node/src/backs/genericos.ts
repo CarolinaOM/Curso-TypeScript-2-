@@ -24,3 +24,8 @@ const deadpool = {
 
 
 console.log( genericFunctionArrow<Villain>(deadpool).dangerLevel  )
+
+
+
+
+
